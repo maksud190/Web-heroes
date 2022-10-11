@@ -35,8 +35,11 @@ function App() {
         }
         
       ]
+    },
+    {
+      path: '*',
+      element: <div className='text-center'><h1>You are routing ulta palta page !! Please with our website.</h1></div>
     }
-
   ])
 
   return (
