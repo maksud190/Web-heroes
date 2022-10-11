@@ -1,9 +1,19 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Statistic from '../Statistic/Statistic';
 
 const Statistics = () => {
+
+    const stats = useLoaderData().data;
+console.log(stats);
     return (
         <div>
-            <h2>Statistic</h2>
+            {
+                stats.map(stat=> <Statistic
+                key={stat.id}
+                stat={stat}
+                ></Statistic>)
+            }
         </div>
     );
 };

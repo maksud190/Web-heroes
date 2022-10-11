@@ -8,13 +8,20 @@ const Home = () => {
     const topics = useLoaderData().data;
 console.log(topics);
     return (
-        <div className='containerStyle'>
+        <div>
+            <div className='heading'>
+                <h1>Start your Web Development with best website</h1>
+                <p><small>Be Confident</small></p>
+            </div>
+            <div className='containerStyle'>
             {
                 topics.map(topic => <Topics
                         key={topic.id}
                         topic={topic}
                     ></Topics>)
             }
+            </div>
+            
             
         </div>
     );

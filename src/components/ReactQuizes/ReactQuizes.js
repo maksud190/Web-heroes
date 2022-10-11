@@ -6,7 +6,7 @@ const ReactQuizes = ({ quiz }) => {
 
     return (
         <div>
-            <div className='mt-5 border'>
+            <div className='container p-5 mt-5 border'>
                 <h4>{question}</h4>
 
                 <div className='d-flex flex-column mt-3'>
