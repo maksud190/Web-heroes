@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ReactQuizes from '../ReactQuizes/ReactQuizes';
 
 const Quizs = () => {
 
@@ -8,7 +9,12 @@ const Quizs = () => {
 
     return (
         <div>
-            <h2>QUIZES {quizs.map()}</h2>
+            {
+                quizs.map(quiz => <ReactQuizes
+                        key={quiz.id}
+                        quiz={quiz}
+                    ></ReactQuizes>)
+            }
         </div>
     );
 };
