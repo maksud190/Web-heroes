@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- 
+
+    Project Name: Develop Quiz website with React Router.
+
+    Live Website link: https://glowing-blini-3b8324.netlify.app/
+
+    What I have done in this project: 
+
+        1. took api from github for showing data dynamically.
+        2. made the website SPA.
+        3. Used react router.
+
+ -->
