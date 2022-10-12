@@ -13,7 +13,7 @@ const Statistics = () => {
         axios.get('https://openapi.programming-hero.com/api/quiz')
             .then(data => {
                 const statDatas = data.data.data;
-                console.log(statDatas);
+                // console.log(statDatas);
 
                 const statsData = statDatas.map(statData => {
                     const singleStat = {
@@ -23,7 +23,7 @@ const Statistics = () => {
                     // console.log(statData.total);
                     return singleStat;
                 })
-                console.log(statsData);
+                // console.log(statsData);
                 setStats(statsData);
             });
     }, [])
