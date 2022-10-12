@@ -8,7 +8,7 @@ const Topics = ({ topic }) => {
     const { name, logo, id, total } = topic;
 
     return (
-        <div class="row g-0">
+        <div class="row g-0 pe-3 mobile-card">
             <div class="col">
                 <div class="card cardStyle">
                     <img src={logo} class="card-img-top" alt="..." />

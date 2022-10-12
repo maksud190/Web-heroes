@@ -13,7 +13,7 @@ console.log(topics);
                 <h1>Start your Web Development with best website</h1>
                 <p><small>Be Confident</small></p>
             </div>
-            <div className='containerStyle'>
+            <div className='containerStyle d-flex'>
             {
                 topics.map(topic => <Topics
                         key={topic.id}

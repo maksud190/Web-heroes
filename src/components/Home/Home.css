@@ -1,6 +1,6 @@
 .containerStyle{
-    margin-top: 80px;
-    margin-left: 40%;
+    margin-top: 50px;
+    margin-left: 40px;
 }
 .heading{
     margin-top: 100px;
@@ -10,6 +10,6 @@
 @media only screen and (max-width: 600px) {
 
         .containerStyle{
-            margin-left: 11%;
+            flex-direction: column;
         }
   }
