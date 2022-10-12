@@ -1,20 +1,24 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import './ReactQuizes.css';
+import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer } from 'react-toastify';
 
-const ReactQuizes = ({ quiz }) => {
+const ReactQuizes = ({ quiz, handleAnswer }) => {
 
-    const { question, options } = quiz;
+    console.log(quiz);
+    const { question, options, id, correctAnswer } = quiz;
+
 
     return (
         <div>
             <div className='container p-5 mt-4 border border-danger'>
-                <FontAwesomeIcon icon="faEyeSlash"></FontAwesomeIcon>
+
+                <button onClick={()=> handleAnswer(correctAnswer)} className="eyIcon"><EyeIcon /></button>
+                <ToastContainer />
                 <h4>{question}</h4>
 
                 <div className='d-flex flex-column mt-3'>
                     {
-                        options.map(option => <label className='mt-2'><input type='radio'></input>{option}</label>)
+                        options.map(option => <label className='mt-2'><input name="option" type='radio'></input>{option}</label>)
                     }
                 </div>
             </div>

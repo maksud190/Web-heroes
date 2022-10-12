@@ -1,0 +1,11 @@
+.eyIcon{
+    position: relative;
+    top: -25px;
+    left: 520px;
+    width: 40px;
+    height: auto;
+}
+button{
+    background-color: rgba(225, 0, 127, 0.002);
+    border: none;
+}
